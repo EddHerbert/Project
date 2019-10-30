@@ -4,29 +4,35 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 
-
-public class Shop {
+@Table (name="easyshop")
+public class easyShop {
 	
-	@Id
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
+ @Id
 	
-	private String list;
+	private String dlist;
 	private String meals;
 	private String date;
 	
-	public Shop (String list, String Meals, String Dates) {
+	public easyShop () {
 
 }
+	public easyShop (String dlist, String meals, String date) {
+		this.dlist = dlist;
+		this.meals = meals;
+		this.date = date;
+	}
+	
 
 	public String getList() {
-		return list;
+		return dlist;
 	}
 
-	public void setList(String list) {
-		this.list = list;
+	public void setList(String dlist) {
+		this.dlist = dlist;
 	}
 
 	public String getMeals() {
@@ -44,6 +50,7 @@ public class Shop {
 	public void setDate(String date) {
 		this.date = date;
 	}
-}
+
+	}
 	
 	

@@ -1,40 +1,68 @@
-package com.Nationwide.business;
-
-import java.awt.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.Nationwide.repository.ShopRepository;
-
-@Service
-public class ShopService {
-	
-	@Autowired
-	
-	private ShopRepository repository;
-	
-	public ShopService ()	{
-		
-		
-	}
-	
-	public List <Shop> getAllList() {
-		if (Shoprepo.findAll().isEmpty()) {
-		
-		}
-		return ShopRepo.findAll();
-	}
-
-	public Trainer addNewTrainer(Trainer trainer) {
-		return trainerRepo.save(trainer);
-	}
-
-	public Trainer updateTrainer(Trainer trainer) {
-		return trainerRepo.save(trainer);
-	}
-
-	public String deleteTrainer(Long id) {
-		trainerRepo.deleteById(id);
-		return "Trainer succesfully deleted";
-}
+//package com.Nationwide.business;
+//
+//
+//import java.awt.List;
+//import java.util.ArrayList;
+//
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.stereotype.Service;
+//
+//import com.Nationwide.domain.Shop;
+//import com.Nationwide.repository.ShopRepository;
+//
+//@Service
+//public class ShopService {
+//	
+//	@Autowired
+//	
+//	private ShopRepository repo;
+//	
+//	public ShopService () {
+//		
+//
+//	}
+//	
+//	public List <Shop> getAllDlist() {
+//
+//		
+//
+//		if (repo.findAll().isEmpty()) {
+//
+//			setUpDlist();
+//
+//		}
+//
+//		return repo.findAll();
+//
+//	}
+//
+//
+//
+//	public Shop addNewDlist(Shop dlist) {
+//
+//		return repo.save(dlist);
+//
+//	}
+//
+//
+//
+//	public Shop updateList(Shop dlist) {
+//
+//		return repo.save(dlist);
+//
+//	}
+//
+//
+//
+//	public String deleteDlist(String id) {
+//
+//		repo.deleteById(id);
+//
+//		return "List removed"; }
+//
+//		private void createNewList() {
+//
+//		}	
+//		
+//		
+//		}

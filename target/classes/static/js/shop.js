@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 
 
@@ -12,18 +10,17 @@
     </li>
 	
     <li class="nav-item">
-      <h3><a class="nav-link" href="#">  <p class="text-white"> <U> <B> Lists  </U> </B> </p></a></h3> 
+      <h3><a class="nav-link" href="Wireframe.html">  <p class="text-white"> <U> <B> Lists  </U> </B> </p></a></h3> 
     </li>
 	
     <li class="nav-item">
-      <h4><a class="nav-link" href="#"> <p class="text-white"> Meals </p> </a> </h4>
+      <h4><a class="nav-link" href="Wireframe2.html"> <p class="text-white"> Meals </p> </a> </h4>
     </li>
     <li class="nav-item">
-      <h4><a class="nav-link" href="#"> <p class="text-white"> Dates </p></a></h4>
+      <h4><a class="nav-link" href="Wireframe3.html"> <p class="text-white"> Dates </p></a></h4>
     </li>
   </ul>
 </nav>
-
 
 
 <html lang="en">
@@ -53,7 +50,7 @@
     
    
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary onclick = "createList()"> Create </button>
 </form>
 
 <ul class="list-group">
@@ -61,6 +58,10 @@
   <li class="list-group-item">Second item</li>
   <li class="list-group-item">Third item</li>
 </ul>
+
+<script>
+
+function createList ();
 
 
 </html>

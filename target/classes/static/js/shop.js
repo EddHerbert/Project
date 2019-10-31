@@ -159,7 +159,7 @@
 
     getItems();
 
-
+    
     function postItem(form) {
       let body = {};
       for (let input of form) {
@@ -183,7 +183,7 @@
         toRemove.remove();
         
         let request = new XMLHttpRequest();
-        request.open("Delete", "http://"+location.hostname+":9002/items/" + id);
+        request.open("DELETE", "http://localhost:9002/items/" + id);
         request.setRequestHeader("Content-Type", "application/json");
         request.onload = function () {
           getItems();
